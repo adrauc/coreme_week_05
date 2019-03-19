@@ -3,6 +3,12 @@
       # the user's working directory and thus be accessible to them
       # throughout the lesson.
 
+if(!require(stringr)){
+  install.packages("stringr")
+  library(stringr)
+}
+
+
 .get_course_path <- function(){
   tryCatch(swirl:::swirl_courses_dir(),
            error = function(c) {file.path(find.package("swirl"),"Courses")}
@@ -10,11 +16,6 @@
 }
 
 load(file.path(.get_course_path(), "coreme_week_05", "week_05", "tweets.rdata"))
-
-if(!require(tibble)){
-  install.packages("tibble")
-  library(tibble)
-}
 
 
 # Path to data
