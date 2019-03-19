@@ -352,7 +352,7 @@
 
 - Class: cmd_question
   Output: Scroll a little to the right - we focus now on the column reply_to_status_id. Subset this column with the $ and save it in a new object called reply.
-  CorrectAnswer: View(reply <- tweets$reply_to_status_id)
+  CorrectAnswer: reply <- tweets$reply_to_status_id
   AnswerTests: omnitest(correctExpr='reply <- tweets$reply_to_status_id')
   Hint: Just type reply <- tweets$reply_to_status_id. 
 
@@ -367,6 +367,7 @@
   CorrectAnswer: is.na(reply)
   AnswerTests: omnitest(correctExpr='is.na(reply)')
   Hint: Just type is.na(reply). 
+  
 - Class: text
   Output: is.na() yields a vector of logical values the same length as reply, with TRUEs corresponding to NA values in replies and FALSEs corresponding to non-NA values in reply.
 
@@ -449,5 +450,10 @@
 - Class: text
   Output: Important points this week - difference between data frames and matrices, how to subest data frames, and how to use is.na().
 
-- Class: text
-  Output: That's it! Next week you will download your own tweets - stay tuned!
+- Class: mult_question
+  Output: Thank you for finishing this class. Press Enter and then please copy the completion code that will appear in the console after this question into an email with the title "[COREME R Week 05]" and send to adrian.rauchfleisch@gmail.com. Would you like to get the completion code? Type the number next to Yes and press Enter - then you need to Enter your student id and name.
+  CorrectAnswer: NULL
+  AnswerChoices: Yes;No
+  AnswerTests: get_token()
+  Hint: NULL
+
