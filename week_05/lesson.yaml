@@ -342,7 +342,7 @@
   Hint: Just type tweets$user_id. 
 
 - Class: text
-  Output: Now we get also vector as you can see. With a data frame both approaches return a vector.
+  Output: Now we get also a vector as you can see. With a data frame both approaches return a vector.
 
 - Class: cmd_question
   Output: Let`s check a preview of the data above in the source code window. Type View(tweets)
