@@ -321,7 +321,7 @@
 
 - Class: cmd_question
   Output: Let's see a summary of the data frame tweets with the summary() function.
-  CorrectAnswer: tweets
+  CorrectAnswer: summary(tweets)
   AnswerTests: omnitest(correctExpr='summary(tweets)')
   Hint: Just use the function summary and add tweets as argument.  
 
