@@ -354,7 +354,7 @@
   Output: Scroll a little to the right - we focus now on the column reply_to_status_id. Subset this column with the $ and save it in a new object called reply.
   CorrectAnswer: reply <- tweets$reply_to_status_id
   AnswerTests: omnitest(correctExpr='reply <- tweets$reply_to_status_id')
-  Hint: Just type reply <- tweets$reply_to_status_id. 
+  Hint: Just type reply <- tweets$reply_to_status_id.  
 
 - Class: cmd_question
   Output: NA value means no value available. All NA are not replies. If there is value it is a reply to a specific tweets. Let`s check the first 20 values of reply with 1:20 and []
